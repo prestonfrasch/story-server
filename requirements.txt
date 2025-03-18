@@ -1,0 +1,3 @@
+chainlit
+lmstudio
+mistral-common
