@@ -21,9 +21,7 @@ pip install -r requirements.txt
 
 ### 2️⃣ Run LM Studio
 This project uses **LM Studio** to serve the Mistral model locally. Download and install [LM Studio](https://lmstudio.ai/), download mistral-7b-instruct-v0.3 from the 🔍discover tab of LM Studio, then load the model and start the server at the ▶️ developer tab:
-```
-http://localhost:1234/v1/completions
-```
+
 ![image](https://github.com/user-attachments/assets/a212c3b0-3681-410d-9e90-1f795f14d65a)
 
 
