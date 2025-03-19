@@ -24,7 +24,8 @@ This project uses **LM Studio** to serve the Mistral model locally. Download and
 ```
 http://localhost:1234/v1/completions
 ```
-![image](https://github.com/user-attachments/assets/4638206d-33c2-4331-9b92-0324dd8540af)
+![image](https://github.com/user-attachments/assets/a212c3b0-3681-410d-9e90-1f795f14d65a)
+
 
 ### 3️⃣ Launch the Chainlit App
 Run the interactive storytelling app with:
