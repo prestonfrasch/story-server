@@ -14,16 +14,17 @@ Welcome to your **interactive storytelling adventure**! 🚀 This project lets y
 ## 🛠 Installation & Setup
 
 ### 1️⃣ Install Dependencies
-Make sure you have **Python 3.9+** installed. Then, install the required packages:
+Make sure you have **Python 3.9+** installed in your system or in a [virtual enviroment](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment). Then, install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 2️⃣ Run LM Studio
-This project uses **LM Studio** to serve the Mistral model locally. Download and install [LM Studio](https://lmstudio.ai/), then start the API at:
+This project uses **LM Studio** to serve the Mistral model locally. Download and install [LM Studio](https://lmstudio.ai/), download mistral-7b-instruct-v0.3 from the 🔎discover tab of LM Studio, then start the API at:
 ```
 http://localhost:1234/v1/completions
 ```
+![image](https://github.com/user-attachments/assets/4638206d-33c2-4331-9b92-0324dd8540af)
 
 ### 3️⃣ Launch the Chainlit App
 Run the interactive storytelling app with:
