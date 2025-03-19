@@ -1,3 +1,2 @@
 chainlit
 lmstudio
-mistral-common
