@@ -1,10 +1,9 @@
 import chainlit as cl
 import requests
 import json
-import random
 from typing import List, Tuple
 from cast_of_characters import characters, Character
-
+from story import story_opening
 # Initialize conversation context and characters
 conversation_context: List[str] = []
 
@@ -20,6 +19,13 @@ def get_character_from_message(message: str) -> Tuple[Character, str]:
         if f"@{char_name}" in message.lower():
             return characters[char_name], message.replace(f"@{char_name}", "").strip()
     return characters["narrator"], message.strip()
+
+@cl.on_chat_start
+async def start():
+    """Initialize chat with story opening"""
+    msg = cl.Message(content=story_opening)
+    await msg.send()
+    conversation_context.append(f"Narrator: {story_opening}")
 
 @cl.on_message
 async def main(message: cl.Message):
@@ -58,6 +64,7 @@ Conversation History:
         accumulated_response = ""
         
         # Process streaming response
+        first_token = True  # Track if it's the first token
         for line in response.iter_lines():
             if line:
                 try:
@@ -69,16 +76,15 @@ Conversation History:
                         break
 
                     decoded_line = json.loads(clean_line)
-                    text_part = decoded_line.get("choices", [{}])[0].get("text", "").strip()
+                    text_part = decoded_line.get("choices", [{}])[0].get("text", "")
 
                     if "User" in text_part:
                         break
 
                     if text_part:
-                        if accumulated_response and not accumulated_response.endswith(" "):
-                            accumulated_response += " "
+                        # Concatenate tokens exactly as they are received
                         accumulated_response += text_part
-                        await msg.stream_token(text_part + " ")
+                        await msg.stream_token(text_part)
 
                 except json.JSONDecodeError:
                     continue
