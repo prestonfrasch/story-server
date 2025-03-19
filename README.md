@@ -14,7 +14,7 @@ Welcome to your **interactive storytelling adventure**! 🚀 This project lets y
 ## 🛠 Installation & Setup
 
 ### 0️⃣ Clone the repository (code)
-Make sure you have git by entering `git` in your terminal. If it doesn't recognize that command, [install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Now, clone the repository to whatever location you would like:
+Git is a little language widely used to help people update and download software projects. Make sure you have git by entering `git` in your terminal. If it doesn't recognize that command, [install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Now, clone the repository to whatever location you would like, using `git clone https://github.com/prestonfrasch/story-server.git':
 ![image](https://github.com/user-attachments/assets/dc328965-fc46-47b0-85db-ac4af7c820c1)
 
 ### 1️⃣ Install Dependencies
