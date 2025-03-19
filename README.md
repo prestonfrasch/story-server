@@ -13,6 +13,10 @@ Welcome to your **interactive storytelling adventure**! 🚀 This project lets y
 
 ## 🛠 Installation & Setup
 
+### 0️⃣ Clone the repository (code)
+Make sure you have git by entering `git` in your terminal. If it doesn't recognize that command, [install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Now, clone the repository to whatever location you would like:
+![image](https://github.com/user-attachments/assets/dc328965-fc46-47b0-85db-ac4af7c820c1)
+
 ### 1️⃣ Install Dependencies
 Make sure you have **Python 3.9+** installed in your system or in a [virtual enviroment](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment). Then, install the required packages:
 ```bash
