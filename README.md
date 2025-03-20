@@ -19,7 +19,7 @@ Git is a little language widely used to help people update and download software
 ![image](https://github.com/user-attachments/assets/dc328965-fc46-47b0-85db-ac4af7c820c1)
 
 ### 1️⃣ Install Dependencies
-Make sure you have **Python 3.9+** installed in your system or in a [virtual enviroment](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment). Then, install the required packages:
+Make sure you have **Python 3.9+** installed in your system or in a [virtual enviroment](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment). Then, **navigate to the folder where the project files are** and install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
@@ -31,7 +31,7 @@ This project uses **LM Studio** to serve the Mistral model locally. Download and
 
 
 ### 3️⃣ Launch the Chainlit App
-Run the interactive storytelling app with:
+Run the interactive storytelling app from the story-server-main 📂 folder with:
 ```bash
 chainlit run app.py
 ```
