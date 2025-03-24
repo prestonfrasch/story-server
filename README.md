@@ -18,9 +18,11 @@ Git is a little language widely used to help people update and download software
 
 ![image](https://github.com/user-attachments/assets/dc328965-fc46-47b0-85db-ac4af7c820c1)
 
+Then, **navigate to the folder where the project files are** with "cd story-server"
+![image](https://github.com/user-attachments/assets/99e69701-cfbf-42c5-bfd4-06d9c3144fc0)
+
 ### 1️⃣ Install Dependencies
-Make sure you have **Python 3.9+** installed in your system or in a [virtual enviroment](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment). Then, **navigate to the folder where the project files are** with "cd story-server"
-![image](https://github.com/user-attachments/assets/8a35cc56-8d5b-442a-a1f1-8b493a90309f)
+Make sure you have **Python 3.9+** installed in your system or in a [virtual enviroment](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment). 
 
 and install the required packages:
 ```bash
