@@ -40,6 +40,10 @@ Run the interactive storytelling app from the story-server 📂 folder with:
 ```bash
 chainlit run app.py
 ```
+*For some windows users, chainlit doesn't get added to the path where it looks for applications. Try this:*
+```bash
+python -m chainlit run app.py
+```
 Your chat adventure will open in a browser tab! 🏹📜
 
 ---
