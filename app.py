@@ -20,7 +20,7 @@ MAX_TOKENS = 4096
 def get_character_from_message(message: str) -> Tuple[Character, str]:
     """Extract character mention and clean message"""
     for char_name in characters.keys():
-        if f"@{char_name}" in message.lower():
+        if f"@{char_name}".lower() in message.lower():
             return characters[char_name], message.replace(f"@{char_name}", "").strip()
     return characters["narrator"], message.strip()
 
